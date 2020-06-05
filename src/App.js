@@ -33,10 +33,10 @@ class Car extends Component {
   constructor(props) {
     super(props);
     this.state = { 
-      brand: " Ferrari ",
+      brand: " Lamborghini ",
       model: " LP 560-4 ",
-      color: " red ",
-      year: " 2020 "
+      color: " yellow ",
+      year: " 2018 "
     };
   }
 
