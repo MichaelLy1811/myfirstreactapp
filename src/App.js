@@ -21,7 +21,7 @@ class App extends Component {
 
     return(
     <div>
-      <h1>My Garage</h1>
+      <h1>THIS IS NOT MY GARAGE</h1>
       {myCar}
       <button type="button" onClick={this.deleteCar}>Delete Car</button>
     </div>
@@ -33,10 +33,10 @@ class Car extends Component {
   constructor(props) {
     super(props);
     this.state = { 
-      brand: " Lamborghini ",
-      model: " LP 560-4 ",
-      color: " yellow ",
-      year: " 2018 "
+      brand: " Ferrari ",
+      model: " F430 ",
+      color: " red ",
+      year: " 2020 "
     };
   }
 
