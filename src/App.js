@@ -8,13 +8,8 @@ class App extends Component {
     };
   }
 
-  deleteCar = () => {
-    this.setState({ show: false });
-  }
-
   render() {
     let myCar;
-
     if (this.state.show) {
       myCar = <Car />;
     };
@@ -23,7 +18,6 @@ class App extends Component {
     <div>
       <h1>THIS IS NOT MY GARAGE</h1>
       {myCar}
-      <button type="button" onClick={this.deleteCar}>Delete Car</button>
     </div>
     )
   }
@@ -40,14 +34,22 @@ class Car extends Component {
     };
   }
 
+  changeColor = () => {
+    this.setState({ color: "blue" })
+  }
+
   render() {
     return(
-    <p>
-      This is a {this.state.year}
-      {this.state.color}
-      {this.state.brand}
-      {this.state.model}
-    </p>
+      <div>
+        <p>
+          This is a {this.state.year}
+          {this.state.color}
+          {this.state.brand}
+          {this.state.model}
+        </p>
+        <button type="button" onClick={this.changeColor}>Change color</button>
+      </div>
+    
     );
   }
 }
